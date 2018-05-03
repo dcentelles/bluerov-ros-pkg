@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 
 <launch>
-  <arg name="fcu_url" default="/dev/pixhawk:115200"/>
-  <arg name="gcs_url" default=""/>
+<!--  <arg name="fcu_url" default="/dev/ttyAMA0:57600"/> -->
+  <arg name="fcu_url" default="/dev/pixhawk:115200"/> 
+  <arg name="gcs_url" default="udp-b://@192.168.1.255"/>
   <arg name="system_id" default="255"/>
   <arg name="component_id" default="240"/>
   <arg name="tgt_system" default="1"/>

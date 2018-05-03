@@ -13,5 +13,10 @@
   <include file="$(find bluerov)/launch/imu_odom.launch" />
 
   <!-- start raspi camera -->
-  <include file="$(find bluerov)/launch/raspi_camera.launch" />
+  <include file="$(find bluerov)/launch/raspi_camera.launch" /> 
+  <include file="$(find image_utils_ros)/launch/encoder.launch"> 
+	<arg name="namespace" value="/merbots/whrov/rov"/>
+	<arg name="image" value="/camera/image/compressed"/>
+	<arg name="imageTransport" value="compressed"/>
+  </include>
 </launch>
